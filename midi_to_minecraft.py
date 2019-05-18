@@ -47,16 +47,16 @@ def update():
 	# S -> D# (+3)
 	# A -> D (+2)
 	# D -> F (+5)
-	# Sneak (shift) -> C (0)
-	# Sprint (ctrl) -> B- (-1)
-	keyboard.setKey(Key.LeftShift, n(0))
-	keyboard.setKey(Key.LeftControl, n(-1))
+	# Jump -> G (+7)
+	# Sneak (shift) -> Damper pedal
+	# Sprint (ctrl) -> C (0)
+	keyboard.setKey(Key.LeftShift, lastPedal)
+	keyboard.setKey(Key.LeftControl, n(0))
 	keyboard.setKey(Key.W, n(4))
 	keyboard.setKey(Key.S, n(3))
 	keyboard.setKey(Key.A, n(2))
 	keyboard.setKey(Key.D, n(5))
-	# Jump is damper pedal
-	keyboard.setKey(Key.Space, lastPedal)
+	keyboard.setKey(Key.Space, n(7))
 	
 	# Camera:
 	# C+ and G+ (+12 and +19) look left and right respectively
